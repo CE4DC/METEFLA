@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_textSize">20sp</dimen>
+
+    <dimen name="login_textSize">36sp</dimen>
+    <dimen name="login_textSize_button">40sp</dimen>
+
+    <dimen name="qrscan_textSize_title">30sp</dimen>
+
+    <dimen name="hospital_textSize">30sp</dimen>
+    <dimen name="hospital_textSize_title">40sp</dimen>
+    <dimen name="hospital_textSize_input">30sp</dimen>
+    <dimen name="hospital_textSize_inputLong">24sp</dimen>
+    <dimen name="hospital_textSize_button">30sp</dimen>
+
+    <dimen name="technician_textSize">30sp</dimen>
+    <dimen name="technician_textSize_title">40sp</dimen>
+    <dimen name="technician_textSize_input">30sp</dimen>
+    <dimen name="technician_textSize_inputLong">24sp</dimen>
+    <dimen name="technician_textSize_button">30sp</dimen>
+
+</resources>

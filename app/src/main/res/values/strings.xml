@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">METELFA</string>
+    <string name="app_name_final">Equipment Failure Logging App</string>
+
+    <string name="login_text_intro">Welcome!</string>
+    <string name="login_text_prompt">I am a:</string>
+    <string name="login_hospital">Doctor / Nurse</string>
+    <string name="login_technician">Technician</string>
+
+    <string name="item_prompt_date">Date:</string>
+    <string name="item_prompt_name">Name:</string>
+
+    <string name="qrscan_title">Scan QR Code</string>
+
+    <string name="hospital_title">Hospital Staff</string>
+    <string name="item_prompt_failures">Failure:</string>
+    <string-array name="item_choice_commonfails">
+        <item>ECG traces have artifacts or base line drift</item>
+        <item>ECG traces have artifacts in one or more traces but not all traces</item>
+        <item>Paper feed not advancing</item>
+        <item>Printing not clear or not uniform</item>
+        <item>The machine shuts down after a few minutes while on battery power</item>
+    </string-array>
+    <string name="item_prompt_comments">Comments:</string>
+
+    <string name="technician_title">Technician</string>
+    <string name="item_prompt_maintenancetype">Maintenance Type: </string>
+    <string-array name="item_choice_maintenancetype">
+        <item>Periodic</item>
+        <item>Preventive</item>
+        <item>Troubleshooting</item>
+    </string-array>
+
+    <string name="item_button_submit">Save</string>
+    <string name="item_button_cancel">Cancel</string>
+
+</resources>
