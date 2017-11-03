@@ -10,20 +10,15 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SharedPreferences userPrefs = this.getSharedPreferences("userPrefs", MODE_PRIVATE);
-        int userType = userPrefs.getInt("USERTYPE", 0);
         Intent intent;
-        switch (userType) {
-            case 1:
-                intent = new Intent(this, QRScanActivity.class);
-                break;
-            case 2:
-                intent = new Intent(this, QRScanActivity.class);
-                break;
-            case 0:
-            default:
-                intent = new Intent(this, LoginActivity.class);
-                break;
+
+        SharedPreferences userPrefs = this.getSharedPreferences(getResources().getString(R.string.PREF_KEY_USER), MODE_PRIVATE);
+        int userType = userPrefs.getInt(getResources().getString(R.string.PREF_KEY_USER_TYPE), 0);
+        if(userType != 0) {
+            intent = new Intent(this, QRScanActivity.class);
+        }
+        else {
+            intent = new Intent(this, AccountCreateActivity.class);
         }
         startActivity(intent);
         finish();

@@ -1,37 +1,66 @@
 <resources>
-    <string name="app_name">METELFA</string>
+    <string name="app_name">METEFLA</string>
     <string name="app_name_final">Equipment Failure Logging App</string>
+
+    <string name="account_create_title">Create Account</string>
+    <string name="account_create_name_first">First Name</string>
+    <string name="account_create_name_last">Last Name</string>
+    <string name="account_create_employee_id">Employee ID</string>
+    <string name="account_create_status_error_firstname">What is your first name?</string>
+    <string name="account_create_status_error_lastname">What is your last name?</string>
+    <string name="account_create_status_error_employeeid">What is your employee ID?</string>
+    <string name="account_create_user_type">I am a:</string>
+    <string name="account_create_button_create">Done</string>
+    <string-array name="account_create_choices_user_type_names">
+        <item>Hospital Staff</item>
+        <item>Technician</item>
+    </string-array>
+    <string-array name="account_create_choices_user_types">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 
     <string name="login_text_intro">Welcome!</string>
     <string name="login_text_prompt">I am a:</string>
     <string name="login_hospital">Doctor / Nurse</string>
     <string name="login_technician">Technician</string>
 
-    <string name="item_prompt_date">Date:</string>
-    <string name="item_prompt_name">Name:</string>
 
     <string name="qrscan_title">Scan QR Code</string>
 
-    <string name="hospital_title">Hospital Staff</string>
-    <string name="item_prompt_failures">Failure:</string>
-    <string-array name="item_choice_commonfails">
+
+    <string name="log_entry_prompt_date">Date:</string>
+    <string name="log_entry_prompt_name">Item Name:</string>
+
+    <string name="log_entry_hospital_title">Hospital Staff</string>
+    <string name="log_entry_prompt_failures">Failure:</string>
+    <string-array name="log_entry_choices_commonfailures">
         <item>ECG traces have artifacts or base line drift</item>
         <item>ECG traces have artifacts in one or more traces but not all traces</item>
         <item>Paper feed not advancing</item>
         <item>Printing not clear or not uniform</item>
         <item>The machine shuts down after a few minutes while on battery power</item>
     </string-array>
-    <string name="item_prompt_comments">Comments:</string>
+    <string name="log_entry_prompt_comments">Comments:</string>
 
-    <string name="technician_title">Technician</string>
-    <string name="item_prompt_maintenancetype">Maintenance Type: </string>
-    <string-array name="item_choice_maintenancetype">
+    <string name="log_entry_technician_title">Technician</string>
+    <string name="log_entry_prompt_maintenancetype">Maintenance Type:</string>
+    <string-array name="log_entry_choices_maintenancetypes">
         <item>Periodic</item>
         <item>Preventive</item>
         <item>Troubleshooting</item>
     </string-array>
 
-    <string name="item_button_submit">Save</string>
-    <string name="item_button_cancel">Cancel</string>
+    <string name="log_entry_button_ok">Send</string>
+    <string name="log_entry_button_cancel">Cancel</string>
+
+    <string name="PREF_KEY_USER">USER_PREFS</string>
+    <string name="PREF_KEY_USER_TYPE">USER_TYPE</string>
+    <string name="PREF_KEY_USER_NAME_FIRST">USER_NAME_FIRST</string>
+    <string name="PREF_KEY_USER_NAME_LAST">USER_NAME_LAST</string>
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
 
 </resources>

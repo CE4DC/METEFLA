@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/default_padding">
+
+    <ScrollView
+        android:id="@+id/log_entry_content_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/log_entry_footer_height"
+        android:padding="16dp">
+
+    </ScrollView>
+
+    <include layout="@layout/log_entry_footer"/>
+
+</RelativeLayout>

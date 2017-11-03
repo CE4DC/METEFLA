@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="match_parent" android:layout_height="match_parent"
     android:padding="@dimen/default_padding"
     android:weightSum="5">
 
@@ -28,10 +27,12 @@
         android:layout_height="0dp">
 
         <Button
+            android:id="@+id/login_doctor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/login_hospital"
-            android:textSize="@dimen/login_textSize_button"/>
+            android:textSize="@dimen/login_textSize_button"
+            android:onClick="onClickLogin"/>
 
     </RelativeLayout>
 
@@ -41,10 +42,12 @@
         android:layout_height="0dp">
 
         <Button
+            android:id="@+id/login_technician"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/login_technician"
-            android:textSize="@dimen/login_textSize_button"/>
+            android:textSize="@dimen/login_textSize_button"
+            android:onClick="onClickLogin"/>
 
     </RelativeLayout>
 

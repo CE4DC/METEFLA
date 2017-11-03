@@ -2,6 +2,9 @@
 
     package="com.techsol.cedc.METEFLA">
 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.wifi" />
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -22,9 +25,20 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name=".AccountCreateActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".QRScanActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name=".LogEntryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".LogEntryActivityHospital"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".LogEntryActivityTechnician"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
 
 
     </application>

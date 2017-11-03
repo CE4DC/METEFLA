@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_button_bar"
+    android:layout_width="match_parent" android:layout_height="@dimen/log_entry_footer_height"
+    android:layout_alignParentBottom="true">
+
+    <View
+        android:id="@+id/button_bar_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@android:color/background_dark"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:id="@+id/button_divider"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/background_dark"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/button_divider"
+        android:layout_toStartOf="@+id/button_divider"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/log_entry_button_cancel"
+        android:textSize="@dimen/log_entry_textSize_button"
+        android:onClick="onClickCancel"/>
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/button_divider"
+        android:layout_toEndOf="@+id/button_divider"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/log_entry_button_ok"
+        android:textSize="@dimen/log_entry_textSize_button"
+        android:onClick="onClickOk"/>
+
+</RelativeLayout>

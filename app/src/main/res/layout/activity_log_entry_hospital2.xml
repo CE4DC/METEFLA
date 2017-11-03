@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/default_padding">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/log_entry_footer_height">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/log_entry_hospital_title"
+                android:textSize="@dimen/log_entry_hospital_textSize_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/log_entry_prompt_date"
+                android:textSize="@dimen/log_entry_hospital_textSize"/>
+
+            <EditText
+                android:id="@+id/log_entry_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:inputType="date"
+                android:textSize="@dimen/log_entry_hospital_textSize_input"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/log_entry_prompt_name"
+                android:textSize="@dimen/log_entry_hospital_textSize"/>
+
+            <EditText
+                android:id="@+id/log_entry_name_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:inputType="none"
+                android:textSize="@dimen/log_entry_hospital_textSize_input"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/log_entry_prompt_failures"
+                android:textSize="@dimen/log_entry_hospital_textSize"/>
+
+            <Spinner
+                android:id="@+id/log_entry_hospital_spinner_failure"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/log_entry_prompt_comments"
+                android:textSize="@dimen/log_entry_hospital_textSize"/>
+
+            <EditText
+                android:id="@+id/log_entry_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:inputType="text|textLongMessage|textAutoCorrect"
+                android:textSize="@dimen/log_entry_hospital_textSize_inputLong"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/log_entry_footer"/>
+
+</RelativeLayout>
